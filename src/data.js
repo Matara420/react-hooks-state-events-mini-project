@@ -1,32 +1,50 @@
-export const CATEGORIES = ["All", "Code", "Food", "Money", "Misc"];
+// src/data.js
 
-export const TASKS = [
+const TASKS = [
+  {
+    text: "Buy groceries",
+    category: "Food",
+  },
+  {
+    text: "Walk the dog",
+    category: "Chore",
+  },
+  {
+    text: "Do laundry",
+    category: "Chore",
+  },
+  {
+    text: "Go to the gym",
+    category: "Health",
+  },
+  {
+    text: "Call mom",
+    category: "Family",
+  },
+  {
+    text: "Read a book",
+    category: "Personal",
+  },
+  // *** ESSENTIAL for tests ***
   {
     text: "Buy rice",
     category: "Food",
   },
   {
-    text: "Save a tenner",
-    category: "Money",
-  },
-  {
     text: "Build a todo app",
     category: "Code",
   },
-  {
-    text: "Build todo API",
-    category: "Code",
-  },
-  {
-    text: "Get an ISA",
-    category: "Money",
-  },
-  {
-    text: "Cook rice",
-    category: "Food",
-  },
-  {
-    text: "Tidy house",
-    category: "Misc",
-  },
 ];
+
+const CATEGORIES = [
+  "All",
+  "Food",
+  "Chore",
+  "Health",
+  "Personal",
+  "Family",
+  // *** ESSENTIAL for tests ***
+  "Code",
+];
+
+export { TASKS, CATEGORIES };
